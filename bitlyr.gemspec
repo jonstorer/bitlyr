@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "bitlyr"
-  s.version = "0.9.3"
+  s.version = "0.9.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["jonstorer"]
-  s.date = "2012-01-17"
+  s.date = "2012-01-20"
   s.description = "A ruby wrapper for version 3 of the bit.ly API\nSupports Login/ApiKey & OAuth authentication\n"
   s.email = "jonathon.scott.storer@gmail.com"
   s.extra_rdoc_files = [
@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     "lib/bitlyr/missing_url.rb",
     "lib/bitlyr/realtime_link.rb",
     "lib/bitlyr/referrer.rb",
+    "lib/bitlyr/referring_domain.rb",
     "lib/bitlyr/response.rb",
     "lib/bitlyr/strategy/access_token.rb",
     "lib/bitlyr/strategy/api_key.rb",
@@ -109,6 +110,7 @@ Gem::Specification.new do |s|
     "test/unit/test_missing.rb",
     "test/unit/test_realtime_link.rb",
     "test/unit/test_referrer.rb",
+    "test/unit/test_referring_domain.rb",
     "test/unit/test_response.rb",
     "test/unit/test_url.rb",
     "test/unit/test_user.rb"

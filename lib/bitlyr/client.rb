@@ -82,6 +82,13 @@ module Bitlyr
       get_single_method(:referrers, input)
     end
 
+    def referring_domains(link, options={})
+      response = get('link/referring_domains', {:link => link}.merge(options))
+      response['referring_domains'].map do |referring_domain|
+        Bitlyr::ReferringDomain.new(referring_domain)
+      end
+    end
+
     # Expands either a short link or hash and gets the country data for that link
     #
     # This method does not take an array as an input

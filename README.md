@@ -1,8 +1,8 @@
-# DEPRECATEd
+# Bitlyr
 
 Ruby Wrapper for Bit.ly Api V3
 
-## Why
+## DEPRECATED
 
 This gem has been deprecated in favor of the OAuth2 only gem [BitlyOAuth](http://github.com/jonstorer/bitly-oauth).
 
